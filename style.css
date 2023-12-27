@@ -1,13 +1,27 @@
 :root {
   --color-white: #ffff;
   --color-dark-blue: #111827;
+  --color-blue: #1d4ed8;
   --color-light-blue: #3b82f6;
+  --color-grey: rgb(156 163 175);
+}
+
+html,
+body {
+  scroll-behavior: smooth;
 }
 
 body {
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "ui-sans-serif", sans-serif;
+  width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 .section:nth-child(odd) {
@@ -28,10 +42,100 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
+  height: 5rem;
+  font-weight: bold;
+}
+
+#header > div > label:hover {
+  cursor: pointer;
+  color: var(--color-light-blue);
+}
+
+#bouton_header > button {
+  background-color: var(--color-light-blue);
+  border-radius: 5px;
+  padding: 1rem;
+  color: var(--color-white);
+  border: none;
+  font-size: 1rem;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#bouton_header > button:hover {
+  background-color: var(--color-blue);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#lien_header {
+  gap: 2rem;
+  display: flex;
   justify-content: space-between;
-  height: 2rem;
 }
 
 .blue {
   color: var(--color-light-blue);
+}
+
+#presentation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#presentation_img {
+  width: 30%;
+  background-color: red;
+}
+
+#a_propos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#a_propos > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 64rem;
+}
+
+#a_propos_txt {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin-right: auto;
+  text-justify: auto;
+  color: var(--color-grey);
+}
+
+#a_propos_img {
+  width: 100%;
+  display: flex;
+  padding: 2rem;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  #a_propos > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #a_propos_img {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    display: flex;
+    align-self: center;
+  }
+
+  #a_propos_txt {
+    width: 100%;
+  }
 }

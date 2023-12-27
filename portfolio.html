@@ -5,6 +5,7 @@
     <link rel="icon" type="image/x-icon" href="logo.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="portfolio.js" defer></script>
     <title>Christopher BONDIER</title>
 </head>
 <body>
@@ -13,9 +14,9 @@
             <label>BONDIER</label>
         </div>
         <div id="lien_header">
-            <label>À propos de moi</label>
-            <label>Projets</label>
-            <label>Compétences</label>
+            <label id="lien_a_propos">À propos de moi</label>
+            <label id="lien_projets">Projets</label>
+            <label id="lien_competences">Compétences</label>
         </div>
         <div id="bouton_header">
             <button>Me contacter</button>
@@ -23,7 +24,7 @@
     </div>
 
     <div id="presentation" class="section">
-            <div>
+            <div class="presentation_partie">
                 <div>
                     <h2>Salut, moi c'est <span class="blue">Christopher</span></h2>
                 </div>
@@ -35,13 +36,21 @@
                 </div>
                 
             </div>
+            <div class="presentation_partie">
+                <img src="moi.png" alt="image de moi" id="presentation_img">
+            </div>
     </div>
 
     <div id="a_propos" class="section">
         <h2>À propos de moi</h2>
         <div>
-            <img alt="photo de moi">
-            <p>Je m'appelle Christopher et je suis à la recherche d'un stage dans le domaine du développement informatique dans le cadre de ma deuxième année de BUT informatique </p>
+            <div>
+                <img alt="photo d'un ordinateur" src="coding-924920_1920.jpg" id="a_propos_img">
+            </div>
+            <divi id="a_propos_txt">
+                <p >Je m'appelle Christopher, un jeune passionné de 19 ans au seuil d'une carrière prometteuse en développement informatique. Actuellement, je me trouve dans les premiers pas de mon parcours en tant que développeur débutant, une aventure qui m'excite autant dans le domaine du développement web que dans celui du développement de logiciels.</p>
+                <p>Mon ambition est de trouver un stage enrichissant, qui serait l'occasion idéale de mettre en pratique et d'approfondir mes connaissances acquises au cours de ma deuxième année de BUT informatique. Je suis à la recherche d'une expérience de stage significative, d'une durée approximative de 10 mois, débutant le 15 avril 2024. Ce stage serait non seulement une étape déterminante pour mon développement professionnel, mais aussi une chance exceptionnelle de plonger dans les défis pratiques et innovants du développement informatique, tout en apportant ma propre touche de créativité et de passion dans ce domaine fascinant.</p>
+            </divi>     
         </div>
     </div>
 
