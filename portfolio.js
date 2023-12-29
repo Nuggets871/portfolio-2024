@@ -16,7 +16,9 @@ document.querySelectorAll(".lien_contact").forEach(function (element) {
 document.getElementById("menu-open").addEventListener("click", ouvrir_menu);
 
 document.getElementById("menu-close").addEventListener("click", fermer_menu);
-
+document.querySelector(".lien_linkedin").addEventListener("click", toLinkedin);
+document.querySelector(".lien_github").addEventListener("click", toGithub);
+document.querySelector(".lien_email").addEventListener("click", toEmail);
 function toA_Propos() {
   document.getElementById("a_propos").scrollIntoView();
   fermer_menu();
@@ -47,4 +49,12 @@ function ouvrir_menu() {
 
 function fermer_menu() {
   document.getElementById("sidebar").style.right = "-100%";
+}
+
+function toEmail() {
+  window.location.href = "mailto:christopherbondier@gmail.com";
+}
+
+function toGithub() {
+  window.open("https://github.com/Nuggets871?tab=repositories");
 }
