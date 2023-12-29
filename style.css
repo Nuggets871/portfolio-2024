@@ -297,18 +297,6 @@ body {
   color: var(--color-dark-blue);
 }
 
-.html-icon {
-  color: #e34f26;
-}
-
-.css-icon {
-  color: #1572b6;
-}
-
-.js-icon {
-  color: #f7df1e;
-}
-
 #contact {
   display: flex;
   flex-direction: column;
@@ -321,6 +309,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 5rem;
 }
 
@@ -346,18 +336,6 @@ body {
   gap: 1rem;
 }
 
-.email-icon {
-  color: #c23a2b;
-}
-
-.linkedin-icon {
-  color: #0077b5;
-}
-
-.github-icon {
-  color: #181717;
-}
-
 #footer {
   display: flex;
   align-items: center;
@@ -374,6 +352,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.img_icone {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 1024px) {
@@ -435,4 +418,42 @@ body {
     flex-direction: column;
     gap: 2rem;
   }
+}
+
+/*  ------------  Couleur icone ------------ */
+
+.html-icon {
+  color: #e34f26;
+}
+
+.css-icon {
+  color: #1572b6;
+}
+
+.js-icon {
+  color: #f7df1e;
+}
+
+.email-icon {
+  color: #c23a2b;
+}
+
+.linkedin-icon {
+  color: #0077b5;
+}
+
+.github-icon {
+  color: #181717;
+}
+
+.java-icon {
+  color: #f89820;
+}
+
+.figma-icon {
+  color: #f24e1e;
+}
+
+.php-icon {
+  color: #777bb4;
 }
