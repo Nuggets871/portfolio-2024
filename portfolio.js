@@ -13,10 +13,12 @@ document.querySelectorAll(".lien_competences").forEach(function (element) {
 document.querySelectorAll(".lien_contact").forEach(function (element) {
   element.addEventListener("click", toContact);
 });
+document.querySelectorAll(".lien_linkedin").forEach(function (element) {
+  element.addEventListener("click", toLinkedin);
+});
 document.getElementById("menu-open").addEventListener("click", ouvrir_menu);
 
 document.getElementById("menu-close").addEventListener("click", fermer_menu);
-document.querySelector(".lien_linkedin").addEventListener("click", toLinkedin);
 document.querySelector(".lien_github").addEventListener("click", toGithub);
 document.querySelector(".lien_email").addEventListener("click", toEmail);
 function toA_Propos() {
