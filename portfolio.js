@@ -1,15 +1,50 @@
-document.getElementById("lien_a_propos").addEventListener("click", () => {
+document.querySelectorAll(".lien_a_propos").forEach(function (element) {
+  element.addEventListener("click", toA_Propos);
+});
+
+document.querySelectorAll(".lien_projets").forEach(function (element) {
+  element.addEventListener("click", toProjets);
+});
+
+document.querySelectorAll(".lien_competences").forEach(function (element) {
+  element.addEventListener("click", toCompetences);
+});
+
+document.querySelectorAll(".lien_contact").forEach(function (element) {
+  element.addEventListener("click", toContact);
+});
+document.getElementById("menu-open").addEventListener("click", ouvrir_menu);
+
+document.getElementById("menu-close").addEventListener("click", fermer_menu);
+
+function toA_Propos() {
   document.getElementById("a_propos").scrollIntoView();
-});
+  fermer_menu();
+}
 
-document.getElementById("lien_projets").addEventListener("click", () => {
+function toProjets() {
   document.getElementById("projets").scrollIntoView();
-});
+  fermer_menu();
+}
 
-document.getElementById("lien_competences").addEventListener("click", () => {
+function toCompetences() {
   document.getElementById("competences").scrollIntoView();
-});
+  fermer_menu();
+}
 
-document.getElementById("bouton_header").addEventListener("click", () => {
+function toContact() {
   document.getElementById("contact").scrollIntoView();
-});
+  fermer_menu();
+}
+
+function toLinkedin() {
+  window.open("https://www.linkedin.com/in/christopher-bondier-15884623a/");
+}
+
+function ouvrir_menu() {
+  document.getElementById("sidebar").style.right = "0";
+}
+
+function fermer_menu() {
+  document.getElementById("sidebar").style.right = "-100%";
+}

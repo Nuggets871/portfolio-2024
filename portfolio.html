@@ -1,95 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="logo.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="logo.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
     <script src="portfolio.js" defer></script>
     <title>Christopher BONDIER</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="header" class="section">
-        <div id="nom_header">
-            <label>BONDIER</label>
+      <div id="nom_header">
+        <label>BONDIER</label>
+      </div>
+      <div id="lien_header">
+        <label class="lien_a_propos">À propos de moi</label>
+        <label class="lien_projets">Projets</label>
+        <label class="lien_competences">Compétences</label>
+      </div>
+      <div id="bouton_header">
+        <button class="lien_contact">Me contacter</button>
+      </div>
+      <div id="menu">
+        <i class="fa-solid fa-bars" id="menu-open"></i>
+        <div id="sidebar">
+          <i class="fa-solid fa-xmark" id="menu-close"></i>
+          <label class="lien_a_propos">À propos de moi</label>
+          <label class="lien_projets">Projets</label>
+          <label class="lien_competences">Compétences</label>
+          <button class="lien_contact">Me contacter</button>
         </div>
-        <div id="lien_header">
-            <label id="lien_a_propos">À propos de moi</label>
-            <label id="lien_projets">Projets</label>
-            <label id="lien_competences">Compétences</label>
-        </div>
-        <div id="bouton_header">
-            <button>Me contacter</button>
-        </div>
+      </div>
     </div>
 
     <div id="presentation" class="section">
-            <div class="presentation_partie">
-                <div>
-                    <h2>Salut, moi c'est <span class="blue">Christopher</span></h2>
-                </div>
-                <div>
-                    Je suis un étudiant en informatique basé à Lyon
-                </div>
-                <div>
-                    <button>À propos de moi</button>
-                </div>
-                
-            </div>
-            <div class="presentation_partie">
-                <img src="moi.png" alt="image de moi" id="presentation_img">
-            </div>
+      <div class="presentation_partie part_gauche">
+        <div>
+          <h2>Salut, moi c'est <span class="blue">Christopher</span></h2>
+        </div>
+        <div>
+          <p>
+            Je suis un étudiant en informatique basé à Villeurbanne, près de
+            Lyon.
+          </p>
+          <p>&#128680; À la recherche d'un stagiaire ? &#128064;</p>
+        </div>
+        <div>
+          <button id="bouton_presentation" class="lien_a_propos">
+            À propos de moi
+          </button>
+          <button id="me_recruter">Me recruter</button>
+        </div>
+      </div>
+      <img src="img/moi.png" alt="image de moi" id="presentation_img" />
     </div>
 
     <div id="a_propos" class="section">
-        <h2>À propos de moi</h2>
+      <h2>À propos de moi</h2>
+      <div id="a_propos_bas">
         <div>
-            <div>
-                <img alt="photo d'un ordinateur" src="coding-924920_1920.jpg" id="a_propos_img">
-            </div>
-            <divi id="a_propos_txt">
-                <p >Je m'appelle Christopher, un jeune passionné de 19 ans au seuil d'une carrière prometteuse en développement informatique. Actuellement, je me trouve dans les premiers pas de mon parcours en tant que développeur débutant, une aventure qui m'excite autant dans le domaine du développement web que dans celui du développement de logiciels.</p>
-                <p>Mon ambition est de trouver un stage enrichissant, qui serait l'occasion idéale de mettre en pratique et d'approfondir mes connaissances acquises au cours de ma deuxième année de BUT informatique. Je suis à la recherche d'une expérience de stage significative, d'une durée approximative de 10 mois, débutant le 15 avril 2024. Ce stage serait non seulement une étape déterminante pour mon développement professionnel, mais aussi une chance exceptionnelle de plonger dans les défis pratiques et innovants du développement informatique, tout en apportant ma propre touche de créativité et de passion dans ce domaine fascinant.</p>
-            </divi>     
+          <img
+            alt="photo d'un ordinateur"
+            src="img/coding-924920_1920.jpg"
+            id="a_propos_img"
+          />
         </div>
+        <div id="a_propos_txt">
+          <p>
+            Je m'appelle Christopher, un jeune passionné de 19 ans au seuil
+            d'une carrière prometteuse en développement informatique.
+            Actuellement, je me trouve dans les premiers pas de mon parcours en
+            tant que développeur débutant, une aventure qui m'excite autant dans
+            le domaine du développement web que dans celui du développement de
+            logiciels.
+          </p>
+          <p>
+            Mon ambition est de trouver un stage enrichissant, qui serait
+            l'occasion idéale de mettre en pratique et d'approfondir mes
+            connaissances acquises au cours de ma deuxième année de BUT
+            informatique. Je suis à la recherche d'une expérience de stage
+            significative, d'une durée approximative de 10 mois, débutant le 15
+            avril 2024. Ce stage serait non seulement une étape déterminante
+            pour mon développement professionnel, mais aussi une chance
+            exceptionnelle de plonger dans les défis pratiques et innovants du
+            développement informatique, tout en apportant ma propre touche de
+            créativité et de passion dans ce domaine fascinant.
+          </p>
+        </div>
+      </div>
     </div>
 
     <div id="projets" class="section">
-        <h2>Mes projets</h2>
-        <div>
-            <div class="projet">
-                <img alt="img du projet">
-                <h1>EduQuiz</h1>
-                <h2>Toutes les UE</h2>
-                <p>EduQuiz est un site qui permet aux utilisateurs d'étudier et d'apprendre leurs cours, termes et définitions tout en s'amusant grâce à des tests générés automatiquement à partir de liste créé ou partagé.</p>
-                <div>
-                    <h2>Langages :</h2>
-                </div>
-                <div>
-                    <button>Live Demo</button>
-                    <button>Lien GIT</button>
-                </div>
-            </div>
+      <h2>Mes projets académique</h2>
+      <div>
+        <div class="projet">
+          <img alt="img du projet" />
+          <h1>EduQuiz</h1>
+          <h2>Toutes les UE</h2>
+          <p>
+            EduQuiz est un site qui permet aux utilisateurs d'étudier et
+            d'apprendre leurs cours, termes et définitions tout en s'amusant
+            grâce à des tests générés automatiquement à partir de liste créé ou
+            partagé.
+          </p>
+          <div>
+            <h2>Langages :</h2>
+          </div>
+          <div>
+            <button>Live Demo</button>
+            <button>Lien GIT</button>
+          </div>
         </div>
+      </div>
     </div>
 
     <div id="competences" class="section">
-        <h2>Mes compétences</h2>
+      <h2>Mes compétences</h2>
     </div>
-    
+
     <div id="contact" class="section">
-        <h2>Me contacter</h2>
+      <h2>Me contacter</h2>
+      <div>
         <div>
-            <div>
-                <div>
-                    <img alt="email icone">
-                    <h3>Email</h3>
-                </div>
-                <p>Prenons contact.</p>
-            </div>
+          <div>
+            <img alt="email icone" />
+            <h3>Email</h3>
+          </div>
+          <p>Prenons contact.</p>
         </div>
-
+      </div>
     </div>
-
-</body>
+  </body>
 </html>
