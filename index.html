@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="logo.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <script src="index.js" defer></script>
+    <title>Christopher BONDIER</title>
+</head>
+<body>
+<div id="header" class="section">
+    <div id="nom_header">
+        <label>BONDIER</label>
+    </div>
+    <div id="lien_header">
+        <label class="lien_a_propos">À propos de moi</label>
+        <label class="lien_projets">Projets</label>
+        <label class="lien_competences">Compétences</label>
+    </div>
+    <div id="bouton_header">
+        <button class="lien_contact">Me contacter</button>
+    </div>
+    <div id="menu">
+        <i class="fa-solid fa-bars" id="menu-open"></i>
+        <div id="sidebar">
+            <i class="fa-solid fa-xmark" id="menu-close"></i>
+            <label class="lien_a_propos">À propos de moi</label>
+            <label class="lien_projets">Projets</label>
+            <label class="lien_competences">Compétences</label>
+            <button class="lien_contact">Me contacter</button>
+        </div>
+    </div>
+</div>
+
+<div id="presentation" class="section">
+    <div class="presentation_partie part_gauche">
+        <div>
+            <h2>Salut, moi c'est <span class="blue">Christopher</span></h2>
+        </div>
+        <div>
+            <p>
+                Je suis un étudiant en informatique basé à Villeurbanne, près de
+                Lyon.
+            </p>
+            <p>&#128680; À la recherche d'un stagiaire ? &#128064;</p>
+        </div>
+        <div>
+            <button id="bouton_presentation" class="lien_a_propos">
+                À propos de moi
+            </button>
+            <button id="me_recruter" class="lien_linkedin">Me recruter</button>
+        </div>
+    </div>
+    <img src="img/moi.png" alt="image de moi" id="presentation_img" />
+</div>
+
+<div id="a_propos" class="section">
+    <h2 class="titre_section">À propos de moi</h2>
+    <div id="a_propos_bas">
+        <div>
+            <img
+                    alt="photo d'un ordinateur"
+                    src="img/coding-924920_1920.jpg"
+                    id="a_propos_img"
+            />
+        </div>
+        <div id="a_propos_txt">
+            <p>
+                Je m'appelle Christopher, un jeune passionné de 19 ans au seuil
+                d'une carrière prometteuse en développement informatique.
+                Actuellement, je me trouve dans les premiers pas de mon parcours en
+                tant que développeur débutant, une aventure qui m'excite autant dans
+                le domaine du développement web que dans celui du développement de
+                logiciels.
+            </p>
+            <p>
+                Mon ambition est de trouver un stage enrichissant, qui serait
+                l'occasion idéale de mettre en pratique et d'approfondir mes
+                connaissances acquises au cours de ma deuxième année de BUT
+                informatique. Je suis à la recherche d'une expérience de stage
+                significative, d'une durée approximative de 10 mois, débutant le 15
+                avril 2024. Ce stage serait non seulement une étape déterminante
+                pour mon développement professionnel, mais aussi une chance
+                exceptionnelle de plonger dans les défis pratiques et innovants du
+                développement informatique, tout en apportant ma propre touche de
+                créativité et de passion dans ce domaine fascinant.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div id="projets" class="section">
+    <h2 class="titre_section">Mes projets académique</h2>
+    <div id="projet_container">
+        <div class="projet">
+            <img alt="img du projet" src="img/eduquiz.png" class="projet_img" />
+            <h2>EduQuiz</h2>
+            <h3>Toutes les UE</h3>
+            <p>
+                EduQuiz est un site qui offre la possibilité aux utilisateurs
+                d'étudier et d'apprendre leurs leçons, termes et définitions tout en
+                se divertissant grâce à des quiz générés automatiquement à partir de
+                listes créées ou partagées.
+            </p>
+            <div class="projet_techno">
+                <h3>Technologies :</h3>
+                <i class="fa-brands fa-html5 html-icon"></i>
+                <i class="fa-brands fa-css3-alt css-icon"></i>
+                <i class="fa-brands fa-js js-icon"></i>
+                <i class="fa-brands fa-php php-icon"></i>
+            </div>
+            <div class="projet_a">
+                <a href="https://eduquiz.fun" target="_blank">Live Demo</a>
+                <a
+                        href="https://forge.univ-lyon1.fr/p2200790/sae_s3"
+                        target="_blank"
+                >
+                    Lien GIT</a
+                >
+            </div>
+        </div>
+
+        <div class="projet">
+            <img alt="img du projet" src="img/graphe.png" class="projet_img" />
+            <h2>Aide décisionnelle graphe</h2>
+            <h3>UE 1 | UE 2 | UE 5</h3>
+            <p>
+                Il s'agit d'une application qui analyse un fichier CSV détaillant un
+                réseau de centres de santé et les routes les reliant. Son objectif
+                est de trouver le chemin le plus sûr ou le plus rapide entre ces
+                centres, en considérant les particularités de chaque centre, comme
+                le type de services offerts, et les divers risques associés à chaque
+                itinéraire.
+            </p>
+            <div class="projet_techno">
+                <h3>Technologies :</h3>
+                <img src="img/java.png" class="img_icone" alt="icone java" />
+                <img src="img/figma.png" class="img_icone" alt="icone figma" />
+                <img
+                        src="img/poweramc.png"
+                        class="img_icone"
+                        alt="icone power amc"
+                />
+            </div>
+            <div class="projet_a">
+                <a
+                        href="https://github.com/Nuggets871/SAE-BUT-1---Centre-de-sant-"
+                        target="_blank"
+                >
+                    Lien GIT</a
+                >
+            </div>
+        </div>
+
+        <div class="projet">
+            <img
+                    alt="img du projet"
+                    src="img/shape_editor.png"
+                    class="projet_img"
+            />
+            <h2>Graphics Editor</h2>
+            <h3>UE 1 | UE 5 | UE 6</h3>
+            <p>
+                Ce projet est un éditeur de scènes virtuelles utilisant les design
+                patterns Composite et Factory dans une architecture MVC. Il permet
+                de créer, modifier, et gérer des formes géométriques et objets
+                complexes dans une scène interactive, avec des fonctionnalités de
+                groupement et de propriétés personnalisables.
+            </p>
+            <div class="projet_techno">
+                <h3>Technologie :</h3>
+                <img src="img/java.png" class="img_icone" alt="icone java" />
+            </div>
+            <div class="projet_a">
+                <a
+                        href="https://github.com/Nuggets871/TP4-Virtual-world"
+                        target="_blank"
+                >
+                    Lien GIT</a
+                >
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="competences" class="section">
+    <h2 class="titre_section">Mes compétences</h2>
+    <p>Rien pour le moment...</p>
+</div>
+
+<div id="contact" class="section">
+    <h2 class="titre_section">Me contacter</h2>
+    <div class="contact_container">
+        <div class="un_contact lien_email">
+            <div>
+                <i class="fa-solid fa-envelope email-icon"></i>
+                <h3>Email</h3>
+            </div>
+            <p>Prenons contact.</p>
+        </div>
+
+        <div class="un_contact lien_linkedin">
+            <div>
+                <i class="fa-brands fa-linkedin linkedin-icon"></i>
+                <h3>LinkedIn</h3>
+            </div>
+            <p>Connectons-nous.</p>
+        </div>
+
+        <div class="un_contact lien_github">
+            <div>
+                <i class="fa-brands fa-github github-icon"></i>
+                <h3>GitHub</h3>
+            </div>
+            <p>Jetez un œil à mes dépôts.</p>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="footer">
+    <p>© Copyright 2023 Christopher Bondier. All rights reserved.</p>
+</div>
+</body>
+</html>
