@@ -390,7 +390,39 @@ body {
     display: none;
   }
 
-  #header {
+#archive-banner {
+  background-color: var(--color-light-blue);
+  color: var(--color-white);
+  text-align: center;
+  padding: 1.25rem 1rem;
+}
+
+#archive-banner p {
+  margin: 0 0 0.75rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+#archive-banner a {
+  display: inline-block;
+  background-color: var(--color-white);
+  color: var(--color-blue);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#archive-banner a:hover {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#header {
     justify-content: space-between;
   }
   #menu {
